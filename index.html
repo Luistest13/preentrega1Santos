@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+<head>
+    <meta charset=”UTF-8″ />
+    <title>preentrega1Santos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="forma">
+        <h1>Te ayudamos con la compra de tu casa</h1>
+        <form>
+            <div>
+                <label for="necesito">Cuanto dinero necesitas?
+                    <input class="nec" type="number" placeholder="Cuanto dinero necesitas" id="montoPrestamo">
+                </label>
+            </div>
+            <div>
+                <label for="numcuotas">En cuantas cuotas deseas pagarlo?
+                    <input type="number" placeholder="Aqui pon las cuotas" id="numCuotas">
+                </label>
+            </div>
+            <div>
+            </div>
+        </form>
+        <button id="boton1" onclick="botonCalculo();">Realizar calculo</button>
+        <table class="tabla">
+            <section>
+                <tr>
+                    <td>Cuota </td>
+                    <td>Dinero que abonas</td>
+                    <td>Interes a pagar</td>
+                    <td>Total a pagar de la cuota</td>
+                </tr>
+            </section>
+            <tbody id="tcuerpo">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="ft">TOTAL</td>
+                    <td id="t1"></td>
+                    <td id="t2"></td>
+                    <td id="t3"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <button class="boton2" onclick="pedir_prestamo();">Pedir Prestamo</button>
+    <button class="boton3" onclick="pago_cuota();">Paga una cuota</button>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
